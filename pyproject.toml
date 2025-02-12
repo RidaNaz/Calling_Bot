@@ -1,0 +1,22 @@
+[project]
+name = "personalized_receptionist"
+version = "0.1.0"
+description = "personalized_receptionist using crewAI"
+authors = [
+    { name = "ridanaz", email = "rnaz3414@gmail.com" }
+    ]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.100.1,<1.0.0",
+]
+
+[project.scripts]
+kickoff = "personalized_receptionist.main:kickoff"
+plot = "personalized_receptionist.main:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"
