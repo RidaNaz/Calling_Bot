@@ -7,7 +7,7 @@
 
 ```bash
 streamlit run src/call_agent/main.py
-uvicorn src.call_agent.main:app --reload
+uvicorn src.main:app --reload
 ```
 
 ```bash

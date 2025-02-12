@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 import os
-from crewai.flow.flow import Flow, listen, start
 from dotenv import load_dotenv
-from litellm import completion
 from twilio.rest import Client
 
 from fastapi import FastAPI
@@ -24,7 +22,7 @@ app = FastAPI(
 )
 
 
-TWILIO_ACCOUNT_SID = os.getnv("TWILIO_ACCOUNT_SID")
+TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
 TWILIO_AUTH_TOKEN= os.getenv("TWILIO_AUTH_TOKEN")
 auth_token = os.environ["TWILIO_AUTH_TOKEN"]
 
