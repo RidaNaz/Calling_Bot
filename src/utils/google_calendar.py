@@ -3,7 +3,7 @@ from googleapiclient.discovery import build
 
 # Path to your credentials.json file
 SCOPES = ['https://www.googleapis.com/auth/calendar']
-SERVICE_ACCOUNT_FILE = "src/utils/credentials-service.json"
+SERVICE_ACCOUNT_FILE = "src/utils/credentials.json"
 
 credentials = service_account.Credentials.from_service_account_file(
     SERVICE_ACCOUNT_FILE, scopes=SCOPES
@@ -24,6 +24,6 @@ def create_appointment(summary, description, start_time, end_time, attendees_ema
         },
     }
 
-    event = service.events().insert(calendarId='rnaz3414@gmail.com', body=event).execute()
+    event = service.events().insert(calendarId='nazrida007@gmail.com', body=event).execute()
     print("Event Created:", event)
     return event.get('htmlLink')
