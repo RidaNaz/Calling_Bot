@@ -14,4 +14,5 @@ uvicorn src.call_agent.main:app --reload
 git checkout -b development   # Switched to a new branch 'development'
 git push -u origin development
 git push --force origin development
+echo "src/utils/credentials-service.json" >> .gitignore
 ```
