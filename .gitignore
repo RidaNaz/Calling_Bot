@@ -3,5 +3,3 @@
 __pycache__/
 lib/
 .DS_Store
-"src/utils/credentials-service.json" 
-"src/call_agent/app2.py" 
