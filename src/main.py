@@ -9,8 +9,8 @@ from fastapi import FastAPI
 from fastapi.routing import APIRoute
 from starlette.middleware.cors import CORSMiddleware
 
-from ..core.config import settings
-from ..api.main import api_router
+from .core.config import settings
+from .api.main import api_router
 
 load_dotenv()
 
